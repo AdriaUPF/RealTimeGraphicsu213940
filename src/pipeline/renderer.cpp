@@ -473,7 +473,7 @@ void Renderer::render_fbo(const Matrix44 model, GFX::Mesh* mesh, SCN::Material* 
 		int j = 0u;
 		bool ambient = true;
 		for (SCN::LightEntity* light : light_list) {
-			printf("is %d\n", j);
+			//printf("is %d\n", j);
 			if (j == 0) {
 				glDisable(GL_BLEND);
 				shader->setUniform1("u_ambient1", ambient);
